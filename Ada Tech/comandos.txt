@@ -1,0 +1,14 @@
+Operadores:
+    Adição            = +
+    Subtração         = -
+    Multiplicação     = *
+    Divisão           = /
+    Exponenciação     = **
+    Resto de divisão  = %
+    (Ex numero1 + numero2)
+
+Precedencia de operadores:
+  1  Parênteses;
+  2  Expoentes;
+  3  Multiplicações e divisões; (da esquerda para a direita);
+  4  Somas e subtrações. (da esquerda para a direita);

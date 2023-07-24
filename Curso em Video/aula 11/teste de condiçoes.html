@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condiçoes</title>
+    <style>
+     body{background-color: cornflowerblue;
+          color: crimson;
+          font: normal 18pt Arial;
+     }
+
+    </style>
+</head>
+<body>
+
+    <input type="number" id="numero1">
+    <input type="number" id="numero2">
+    <input type="button" value="somar" id="somar" onclick="somar()">
+    <div id="res"></div>
+    <div id="MouM"></div>
+
+    <script>
+        
+function somar(){
+    var txt1 = document.getElementById('numero1')
+    var txt2 = document.getElementById('numero2')
+    var res = document.getElementById('res')
+    var n1 = Number(txt1.value)
+    var n2 = Number(txt2.value)
+    var soma = n1 + n2
+    res.innerHTML = `O resultado é = ${soma} `
+
+    if (soma < 10) {
+        MouM.innerHTML = `O seu resultado é menor que 10!`
+        
+    } else {
+        MouM.innerHTML = `O seu resultado é maior que 10!`
+    }
+}
+    </script>
+</body>
+</html>

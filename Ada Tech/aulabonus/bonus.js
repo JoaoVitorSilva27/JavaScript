@@ -1,0 +1,1 @@
+console.log('Teste de inclusao do JS no HTML')

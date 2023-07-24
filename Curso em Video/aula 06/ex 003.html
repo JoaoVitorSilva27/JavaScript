@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>testando</title>
+    <style>
+        body { background-color: rgb(86, 0, 167);
+               color: rgb(255, 189, 22) ;
+               font: normal 20pt Arial ;   
+        }
+    </style>
+</head>
+<body>
+
+    <h1 align = center> Ola, mundo! </h1> 
+    <p align = center>Bem vindo a minha calculadora automatizada!</p>
+</br>
+     
+
+    <script>
+
+          var n1 = Number(window.prompt('digite um numero:'))
+          var n2 = Number(window.prompt('digie outro numero:'))
+          var soma = n1 + n2
+          var menos = n1 - n2
+          var menos2 = n2 - n1
+          var multi = n1 * n2
+          var divi = n1 / n2 
+          var potencia = n1 ** n2
+          var potencia2 = n2 ** n1
+          
+
+          document.write(`A soma entre ${n1} e ${n2} é igual a = <b> ${soma} </b> </br>`)
+          document.write(`A subtraçao entre eles fica = <b> ${menos} </b> . Ou invertendo os valores = <b>${menos2}</b></br>`)
+          document.write(`A multiplicação entre eles é igual a = <b>${multi}</b> </br>`)
+          document.write(`O resulado de sua divisão entre eles é = <b>${divi}</b> </br>`)
+          document.write(`A potencia de <b> ${n1} sobre ${n2} </b> é = <b>${potencia}</b> . E de <b> ${n2} sobre ${n1} </b> é = ${potencia2}`)
+
+    </script>
+</body>
+</html>

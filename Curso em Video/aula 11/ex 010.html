@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio de condicoes (detran)</title>
+    <style>
+
+        body{background-color: cornflowerblue;
+             color: crimson;
+             font: normal 17pt Arial;
+
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Sistema de multas</h1>
+    Velocidade do carro:<input type="number" id="txtvel">km/h
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="resultado"></div>
+
+    <script>
+
+        
+        function calcular() {
+            var txtv = document.getElementById('txtvel')
+            var res = document.getElementById('resultado')
+            var vel = Number(txtv.value)
+            res.innerHTML = `Sua velociade é <strong>${vel}km/h</strong></br>`
+            if (vel > 60) {
+                res.innerHTML +=(`Voce esta acima do limite de velocidade (60km/h). <strong>Multado!</strong></br>`)
+            }
+            res.innerHTML += `Dirija sempre com segurança!`
+            
+        }
+    </script>
+
+</body>
+</html>

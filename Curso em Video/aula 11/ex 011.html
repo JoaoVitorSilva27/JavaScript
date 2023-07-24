@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio nacionalidade</title>
+    <style>
+
+        body{background-color: cornflowerblue;
+            color: crimson;
+            font: normal 17pt Arial;
+
+
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Nacionalidade</h1>
+    <input type="text" name="naci" id="naci">
+    <input type="button" value="Verificar" onclick="verif()">
+    <div id="res"></div>
+
+    <script>
+
+        function verif() {
+            var pais = document.getElementById('naci')
+            var rest = document.getElementById('res')
+            var ptxt = pais.value
+            if (ptxt == 'brasil' || ptxt == 'Brasil') {
+                rest.innerHTML = `Voce mora no <strong>${ptxt}</strong> e pode ser considerado Brasileiro!`
+                    
+            } else {
+                rest.innerHTML = `Voce mora no pais = <strong>${ptxt}</strong>. Ja pode ser considerado estrangeiro`
+                
+            }
+            
+        }
+
+    </script>
+    
+</body>
+</html>
